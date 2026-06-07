@@ -50,6 +50,14 @@ a {
   margin: 5px;
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+}
+.slider img {
+  width: 600px;
+}
+
 #contact {
   position: sticky;
   bottom: 0;
