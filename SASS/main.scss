@@ -1,7 +1,51 @@
 // Partials
 @use 'variables';
+@use 'imagenes';
+
 
 body {
     font-family: variables.$main-font;
-    background-color: variables.$main-color1;
+    background-color: variables.$backround-color;
+    color: variables.$main-color;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; 
+    background-color: variables.$main-color;
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: variables.$nav-font-size;
+        color: #ffffff;
+        font-weight: bold
+    }
+}
+
+
+.logos {
+    width: imagenes.$logo-width;
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo-container{
+    background-color: #ffffff;
+    border-radius: imagenes.$logo-radius;
+    padding: 2px;
+    margin: 5px;
 }

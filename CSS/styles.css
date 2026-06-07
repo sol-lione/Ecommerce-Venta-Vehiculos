@@ -1,8 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   font-family: "Ubuntu Mono", monospace;
-  background-color: #F6FFEA;
+  background-color: #f1e4d1;
+  color: #162660;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #162660;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logos {
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.logo-container {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 2px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
-/*npx sass SASS/main.scss CSS/styles.css*/
