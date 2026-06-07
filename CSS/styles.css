@@ -6,13 +6,16 @@ body {
   padding: 0;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background-color: #162660;
   margin: 0;
   padding-left: 2rem;
@@ -25,10 +28,13 @@ nav ul {
   gap: 2rem;
 }
 nav a {
-  text-decoration: none;
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logos {

@@ -5,18 +5,22 @@
 
 body {
     font-family: variables.$main-font;
-    background-color: variables.$backround-color;
+    background-color: variables.$background-color;
     margin: 0;
     padding: 0;
+}
+
+header{
+    position: sticky; 
+    top: 0;
+    z-index: 100;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky; 
-    top: 0;
-    z-index: 100;
+
     background-color: variables.$main-color;
     margin: 0;
     padding-left: 2rem;
@@ -30,12 +34,13 @@ nav {
     }
 
     a{
-        text-decoration: none;
         font-size: variables.$nav-font-size;
         color: #ffffff;
         font-weight: bold
     }
 }
+
+a{ text-decoration: none;}
 
 
 .logos {
@@ -66,6 +71,8 @@ footer{
     align-items: center;
     padding: 20px;
     
+    
+
     .logos{
         width: imagenes.$footer-logo-width;
     }
