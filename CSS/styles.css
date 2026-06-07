@@ -44,6 +44,13 @@ nav a {
   margin: 5px;
 }
 
+#contact {
+  position: sticky;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+}
+
 footer {
   background-color: #162660;
   color: #ffffff;
