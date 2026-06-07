@@ -6,7 +6,6 @@
 body {
     font-family: variables.$main-font;
     background-color: variables.$backround-color;
-    color: variables.$main-color;
     margin: 0;
     padding: 0;
 }
@@ -16,6 +15,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: sticky; 
+    top: 0;
+    z-index: 100;
     background-color: variables.$main-color;
     margin: 0;
     padding-left: 2rem;
@@ -48,4 +49,17 @@ nav {
     border-radius: imagenes.$logo-radius;
     padding: 2px;
     margin: 5px;
+}
+
+footer{
+    background-color: variables.$main-color;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    .logos{
+        width: imagenes.$footer-logo-width;
+    }
 }
