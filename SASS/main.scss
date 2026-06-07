@@ -1,0 +1,7 @@
+// Partials
+@use 'variables';
+
+body {
+    font-family: variables.$main-font;
+    background-color: variables.$main-color1;
+}
