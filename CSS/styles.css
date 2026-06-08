@@ -50,14 +50,6 @@ a {
   margin: 5px;
 }
 
-.slider {
-  display: flex;
-  align-items: center;
-}
-.slider img {
-  width: 600px;
-}
-
 #contact {
   position: sticky;
   bottom: 0;
@@ -75,6 +67,49 @@ footer {
 }
 footer .logos {
   width: 30px;
+}
+
+.carousel {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1em solid #162660;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  animation: spin 20s infinite linear;
+  padding-right: 1em;
+}
+
+.card {
+  flex: 0 0 5em;
+  height: 8em;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+.card:hover {
+  transform: translateY(-15px);
+  width: 600px;
 }
 
 /*# sourceMappingURL=styles.css.map */
