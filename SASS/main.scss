@@ -175,9 +175,7 @@ footer{
       justify-items: center;
       align-items: center;
 
-      img{
-        width: 400px;
-      }
+      
 }
 
 #catalogue-product-1 { grid-column: 1  / 3; grid-row: 1 / 3; }
@@ -187,7 +185,8 @@ footer{
 #catalogue-product-5 { grid-column: 4  / 6; grid-row: 3 / 4; }
 
 .catalogue-product{
-    width: imagenes.$display-product-img;
+    width: imagenes.$product-image-size;
+    //height: imagenes.$product-image-size;
 }
 
 .catalogue-submenu-nav{
@@ -215,5 +214,10 @@ footer{
         scroll-margin-top: 180px; // Espacio extra para que el header sticky no tape el título
     }
 }
+
+
+
+
+
 
 // npx sass --watch SASS/main.scss CSS/styles.css
