@@ -2,55 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/styles.css">
-  <title>Vehicle Sales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Vehicle Sales</title>
 </head>
 
 <body>
-  <header>
+    <header>
 
-    <nav>
-      <div class="logo-container">
-        <img class="logos" src="../Imagenes/logo.png" alt="Logo">
-      </div>
+        <nav>
+            <div class="logo-container">
+                <img class="logos" src="../Imagenes/logo.png" alt="Logo">
+            </div>
 
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
-        <li><a href="our_family.html">Our Family</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="our_family.html">Our Family</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-  </header>
+    </header>
 
     <main>
 
+        <section class="contact-container">
+
+            <iframe id="contact-map" title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.6267536834!2d-88.06152172494062!3d41.833239303261166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20Illinois%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1782942520565!5m2!1ses-419!2sar"
+                width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+            <div id="contact-form-container">
+                <h1>Contact Us</h1>
+
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div id="social-media-container">
+                <a href="https://web.whatsapp.com/">
+                    <img class="logos" src="../Imagenes/Contact/whatsapp.png" alt="Logo Whatsapp">
+                </a>
+                <a href="https://www.instagram.com/?hl=es">
+                    <img class="logos" src="../Imagenes/Contact/instagram.png" alt="Logo Instagram">
+                </a>
+                <a href="https://www.facebook.com/login/?locale=es_ES">
+                    <img class="logos" src="../Imagenes/Contact/facebook.png" alt="Logo Facebook">
+                </a>
+            </div>
+
+        </section>
 
     </main>
 
-  
 
-  <footer>
 
-    <div>
-      <a href="https://web.whatsapp.com/">
-        <img class="logos" src="../Imagenes/Contact/whatsapp.png" alt="Logo Whatsapp">
-      </a>
-      <a href="https://www.instagram.com/?hl=es">
-        <img class="logos" src="../Imagenes/Contact/instagram.png" alt="Logo Instagram">
-      </a>
-      <a href="https://www.facebook.com/login/?locale=es_ES">
-        <img class="logos" src="../Imagenes/Contact/facebook.png" alt="Logo Facebook">
-      </a>
-    </div>
+    <footer>
 
-    <p>auto.market@inc.com</p>
+        <div>
+            <a href="https://web.whatsapp.com/">
+                <img class="logos" src="../Imagenes/Contact/whatsapp.png" alt="Logo Whatsapp">
+            </a>
+            <a href="https://www.instagram.com/?hl=es">
+                <img class="logos" src="../Imagenes/Contact/instagram.png" alt="Logo Instagram">
+            </a>
+            <a href="https://www.facebook.com/login/?locale=es_ES">
+                <img class="logos" src="../Imagenes/Contact/facebook.png" alt="Logo Facebook">
+            </a>
+        </div>
 
-  </footer>
+        <p>auto.market@inc.com</p>
+
+    </footer>
 </body>
 
 </html>

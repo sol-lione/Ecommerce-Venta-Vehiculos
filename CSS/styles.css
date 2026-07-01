@@ -282,4 +282,61 @@ footer .logos {
   border: 6px solid #d0e6fd;
 }
 
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 0;
+  row-gap: 4em;
+  align-items: start;
+  justify-items: start;
+  padding-top: 5em;
+  padding-bottom: 6em;
+}
+
+#contact-map {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-self: end;
+  margin: 1em;
+}
+
+#contact-form-container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-color: #162660;
+  color: white;
+  padding: 2rem;
+  margin: 1em;
+  border-radius: 1rem;
+  justify-self: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 180px;
+}
+
+#social-media-container {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  justify-self: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
