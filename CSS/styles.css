@@ -218,14 +218,14 @@ footer .logos {
   gap: 1em;
 }
 
-.card {
+.catalogue-product-card {
   width: 400px;
   height: 30rem;
   position: relative;
   cursor: pointer;
 }
 
-.top {
+.catalogue-product-card-top {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -237,18 +237,18 @@ footer .logos {
   transition: 1s;
   z-index: 1;
 }
-.top .catalogue-product {
+.catalogue-product-card-top .catalogue-product {
   width: 400px;
   border-radius: 1rem;
 }
 
-.card:hover .top {
+.catalogue-product-card:hover .catalogue-product-card-top {
   transform: translateY(-100%);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.bottom {
+.catalogue-product-card-bottom {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -264,7 +264,7 @@ footer .logos {
   border-radius: 1rem;
 }
 
-.card:hover .bottom {
+.catalogue-product-card:hover .catalogue-product-card-bottom {
   transform: translateY(0);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
