@@ -317,7 +317,7 @@ footer {
 
 
 // OUR FAMILY
-.card__container{
+.our_family-card__container{
     position: relative;
     //padding-block: 5rem;
 
@@ -329,18 +329,18 @@ footer {
 }
 
 
-.card__article{
+.our_family-card__article{
     position: relative;
     border-radius: 2rem;
     overflow: hidden;
 }
 
-.card__img{
+.our_family-card__img{
     border-radius: 2rem;
     transition: transform .4s;
 }
 
-.card__shadow{
+.our_family-card__shadow{
     position: absolute;
     top: 0;
     left: 0;
@@ -353,26 +353,26 @@ footer {
                 // HACER AZUL !!!!!
 }
 
-.card__data{
+.our_family-card__data{
     color: variables.$secondary-color;
     position: absolute;
     left: 1.5rem;
     bottom: 1.5rem;
 }
 
-.card__name{
+.our_family-card__name{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: .25rem;
 }
 
-.card__profession{
+.our_family-card__profession{
     display: block;
     font-size: .875rem;
 }
 
-.card__clip{
+.our_family-card__clip{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -390,11 +390,11 @@ footer {
     transition: transform .4s;
 }
 
-.card__article:hover .card__img{
+.our_family-card__article:hover .our_family-card__img{
     transform: scale(1.2);
 }
 
-.info{
+.our_family-info{
     position: absolute;
     top: 0;
     left: 0;
@@ -410,20 +410,20 @@ footer {
     transition: clip-path .5s ease-in-out;
 }
 
-.info__name{
+.our_family-info__name{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: .5rem;
 }
 
-.info__description{
+.our_family-info__description{
     display: block;
     font-size: .875rem;
     margin-bottom: 1rem;
 }
 
-.info__button{
+.our_family-info__button{
     display: inline-flex;
     background-color: variables.$main-color;
     color: #ffffff;
@@ -435,16 +435,16 @@ footer {
     transition: box-shadow .4s;
 }
 
-.info__button:hover{
+.our_family-info__button:hover{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.38);
 }
 
-.card__article:hover .card__clip{
+.our_family-card__article:hover .our_family-card__clip{
     transform: rotate(-45deg);
 }
 
-.info:hover, 
-.card__clip:hover ~ .info{
+.our_family-info:hover, 
+.our_family-card__clip:hover ~ .our_family-info{
     clip-path: circle(100%);
 }
 
