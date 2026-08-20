@@ -270,6 +270,128 @@ footer .logos {
   border-top-right-radius: 0;
 }
 
+.card__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card__article {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.card__img {
+  border-radius: 2rem;
+  transition: transform 0.4s;
+}
+
+.card__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 70%, hsla(0, 0%, 0%, 0.5) 100%);
+}
+
+.card__data {
+  color: #d0e6fd;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.card__profession {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.card__clip {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #d0e6fd;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+  color: #162660;
+  z-index: 5;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.card__article:hover .card__img {
+  transform: scale(1.2);
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d0e6fd;
+  opacity: 80%;
+  backdrop-filter: blur(12px);
+  padding: 3rem 1.5rem 1.5rem;
+  color: #162660;
+  clip-path: circle(8px at 92.4% 8%);
+  transition: clip-path 0.5s ease-in-out;
+}
+
+.info__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.info__description {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.info__button {
+  display: inline-flex;
+  background-color: #162660;
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: box-shadow 0.4s;
+}
+
+.info__button:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.38);
+}
+
+.card__article:hover .card__clip {
+  transform: rotate(-45deg);
+}
+
+.info:hover,
+.card__clip:hover ~ .info {
+  clip-path: circle(100%);
+}
+
 .about-content-container {
   display: flex;
   flex-direction: column;

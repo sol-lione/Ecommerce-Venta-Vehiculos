@@ -317,8 +317,135 @@ footer {
 
 
 // OUR FAMILY
-.our_family-bussiness-cards{
-   
+.card__container{
+    position: relative;
+    //padding-block: 5rem;
+
+    display: flex;
+    //grid-template-columns: 260px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.card__article{
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.card__img{
+    border-radius: 2rem;
+    transition: transform .4s;
+}
+
+.card__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+                hsla(0, 0%, 0%, 0) 70%,         
+                hsla(0, 0%, 0%, .5) 100%); 
+
+                // HACER AZUL !!!!!
+}
+
+.card__data{
+    color: variables.$secondary-color;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+}
+
+.card__name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .25rem;
+}
+
+.card__profession{
+    display: block;
+    font-size: .875rem;
+}
+
+.card__clip{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: variables.$secondary-color;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    color: variables.$main-color;
+    z-index: 5;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.card__article:hover .card__img{
+    transform: scale(1.2);
+}
+
+.info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$secondary-color;
+    opacity: 80%;
+    backdrop-filter: blur(12px);
+    padding: 3rem 1.5rem 1.5rem;
+    color: variables.$main-color;
+
+    clip-path: circle(8px at 92.4% 8%);
+    transition: clip-path .5s ease-in-out;
+}
+
+.info__name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.info__description{
+    display: block;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+}
+
+.info__button{
+    display: inline-flex;
+    background-color: variables.$main-color;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    font-size: .875rem;
+    font-weight: 700;
+    transition: box-shadow .4s;
+}
+
+.info__button:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.38);
+}
+
+.card__article:hover .card__clip{
+    transform: rotate(-45deg);
+}
+
+.info:hover, 
+.card__clip:hover ~ .info{
+    clip-path: circle(100%);
 }
 
 
