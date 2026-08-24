@@ -238,6 +238,146 @@ footer {
     }
 }
 
+
+.container{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+
+    > h2 {
+        scroll-margin-top: 10rem;
+        margin: 0 0 2rem;
+        padding: .75rem 2.5rem;
+        color: #ffffff;
+        background-color: variables.$main-color;
+        border-left: .5rem solid variables.$secondary-color;
+        border-radius: .5rem;
+        box-shadow: 0 8px 20px rgba(22, 38, 96, .25);
+        text-align: center;
+    }
+}
+
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+}
+
+.card__container > h2 {
+    grid-column: 1 / -1;
+}
+
+.card__article{
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img{
+    border-radius: 1.5rem;
+}
+
+.card__data{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    //box-shadow: 0 8px 24px hsla(227, 63%, 23%, 1);
+    box-shadow: 0 8px 24px variables.$main-color;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    
+}
+
+.card__title{
+    margin-top: 0;
+    margin-bottom: .75rem;
+}
+
+.card__description{
+    display: block;
+    margin-bottom: .30rem;
+}
+
+.card__info{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color:#c51010bd;
+    margin-bottom: .40rem;
+}
+
+
+.card__button{
+    text-decoration: none;
+    font-weight: 600;
+    color: variables.$main-color;
+}
+
+.card__button:hover{
+    text-decoration: underline;
+}
+
+.card__article:hover .card__data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.card__article:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data{
+    animation: remove-data 2s forwards;
+}
+
+@keyframes show-data {
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+/*
 .catalogue-products-container {
 
     padding: 2em;
@@ -312,7 +452,7 @@ footer {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
+*/
 
 
 
